@@ -1,0 +1,91 @@
+/* Container for logo + nav items */
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: transparent;
+}
+
+/* Logo styles to match button height */
+.logo {
+    height: 45px;
+    width: 45px;
+    /* Match this with your button height */
+    object-fit: contain;
+}
+
+/* Nav items */
+ul {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove default anchor and style buttons */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Button style */
+.Navbuttons {
+    padding: 7px 10px;
+    border: 1px solid #212121;
+    border-radius: 32px;
+    color: #212121;
+    z-index: 1;
+    background: transparent;
+    position: relative;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 250ms;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.Navbuttons::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+}
+
+.Navbuttons:hover {
+    color: #e8e8e8;
+}
+
+.Navbuttons:hover::before {
+    width: 100%;
+}
+
+
+/* @media (max-width: 700px) {
+    nav.navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    .logo {
+        margin-bottom: 0.5rem;
+    }
+} */

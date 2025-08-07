@@ -1,0 +1,332 @@
+.card {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    /* optional limit on large screens */
+    height: 320px;
+    aspect-ratio: 16/9;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px whitesmoke;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin: 20px auto;
+}
+
+.card svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(74, 151, 130, 0.2);
+}
+
+.card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    opacity: 0.95;
+    z-index: 2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+    transform: rotateX(0deg);
+}
+
+.card__title {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+    font-weight: 700;
+}
+
+.card:hover svg {
+    scale: 0;
+}
+
+.card__description {
+    margin: 10px 0 10px;
+    font-size: 12px;
+    color: #777;
+    line-height: 1.4;
+}
+
+.card__button {
+    padding: 15px;
+    border-radius: 8px;
+    background: #777;
+    border: none;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.secondary {
+    background: transparent;
+    color: #777;
+    border: 1px solid #777;
+}
+
+.card-icon {
+    width: 64px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.card__actions {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    margin-top: 18px;
+    align-items: center;
+}
+
+/* Consistent button sizing for both buttons */
+.card__button,
+.buttonGitHub {
+    min-width: 130px;
+    height: 44px;
+    padding: 0 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s, border 0.3s;
+    gap: 8px;
+}
+
+.card__button {
+    background: #4A9782;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+}
+
+.card__button.secondary {
+    background: transparent;
+    color: #4A9782;
+    border: 2px solid #4A9782;
+}
+
+.card__button:hover,
+.card__button.secondary:hover {
+    background: #35705a;
+    color: #fff;
+    border-color: #35705a;
+}
+
+.buttonGitHub {
+    background-color: #181717;
+    outline: 2px #181717 solid;
+    outline-offset: -2px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.buttonGitHub .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+}
+
+.buttonGitHub img {
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s;
+}
+
+.buttonGitHub:hover {
+    background-color: transparent;
+    outline: 2px #181717 solid;
+}
+
+.buttonGitHub:hover .text {
+    color: #181717;
+}
+
+.buttonGitHub:hover img {
+    filter: none;
+}
+
+/* Scoped Learn More Button Styles */
+.learn-more-btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    width: 12rem;
+    height: auto;
+}
+
+.learn-more-btn .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+}
+
+.learn-more-btn .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+.learn-more-btn .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+.learn-more-btn .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+.learn-more-btn .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.learn-more-btn:hover .circle {
+    width: 100%;
+}
+
+.learn-more-btn:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+.learn-more-btn:hover .button-text {
+    color: #fff;
+}
+
+/* Position Live Demo and GitHub buttons at left and right bottom corners */
+
+.card__button--left,
+.card__button--right {
+    position: absolute;
+    bottom: 24px;
+    z-index: 3;
+}
+
+.card__button--left {
+    left: 24px;
+}
+
+.card__button--right {
+    right: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .card__button,
+    .buttonGitHub {
+        min-width: 100px;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+
+    .learn-more-btn {
+        width: 12rem;
+    }
+
+    .learn-more-btn .circle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .learn-more-btn .circle .icon.arrow {
+        left: 0.4rem;
+        width: 1.125rem;
+        height: 0.125rem;
+    }
+
+    .learn-more-btn .circle .icon.arrow::before {
+        width: 0.525rem;
+        height: 0.525rem;
+    }
+
+    .learn-more-btn .button-text {
+        padding: 0.5rem 0;
+        margin: 0 0 0 0rem;
+        line-height: 1.6;
+    }
+
+    .learn-more-btn:hover .circle {
+        height: 40px;
+        width: 80%;
+    }
+
+    .learn-more-btn:hover .circle .icon.arrow {
+        transform: translate(1rem, 0);
+    }
+
+}

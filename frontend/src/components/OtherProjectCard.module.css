@@ -1,0 +1,93 @@
+/* From Uiverse.io by kamehame-ha */
+.otherCards {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+}
+
+.otherCard {
+    background-color: white;
+    color: #222;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    text-align: start;
+    height: 250px;
+    flex: 1 1 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 400ms;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    min-width: 0;
+}
+
+.otherCard .CardImage {
+    width: 90%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.otherCard .CardImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.otherCard p.tip {
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.otherCard p.second-text {
+    font-size: .7em;
+    color: gray;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.otherCard:hover {
+    transform: scale(1.05, 1.05);
+    z-index: 2;
+}
+
+.otherCards:hover>.otherCard:not(:hover) {
+    filter: blur(3px);
+    transform: scale(0.97, 0.97);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .otherCards {
+        flex-direction: column;
+    }
+
+    .otherCard {
+        background-color: white;
+        color: #222;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        text-align: start;
+        height: 300px;
+        flex: 1 1 0;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 400ms;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        min-width: 0;
+    }
+}
