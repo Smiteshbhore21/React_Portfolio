@@ -8,6 +8,8 @@ import TourGuide from '../assets/Tour Guide.jpg';
 import OtherProjectCard from '../components/OtherProjectCard';
 import GitHubCard from '../components/GitHubCard';
 import Skills from '../components/Skills';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ProjectData = [
     {
@@ -38,6 +40,13 @@ const ProjectData = [
 
 const Work = () => {
 
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    }, []);
+
     const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
     useEffect(() => {
@@ -48,7 +57,12 @@ const Work = () => {
 
     return (
         <>
-            <section style={{ paddingTop: '3rem', paddingBottom: '3rem', marginBottom: '7rem', marginTop: '3rem' }}>
+            <section style={{
+                paddingTop: '3rem',
+                paddingBottom: '3rem',
+                marginBottom: '7rem',
+                marginTop: '3rem'
+            }} data-aos="fade">
                 <h1 style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>
                     Hello there, I'm <span style={{ color: '#4A9782' }}>Smitesh Bhore!</span>
                 </h1>
@@ -69,7 +83,7 @@ const Work = () => {
                 </p>
             </section >
 
-            <section style={{ paddingTop: '1rem', paddingBottom: '1rem' }}>
+            <section style={{ paddingTop: '1rem', paddingBottom: '1rem' }} data-aos="fade">
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
                     {ProjectData.map((project, index) => (
                         <ProjectCard
@@ -83,23 +97,23 @@ const Work = () => {
                 </div>
             </section>
 
-            <p style={{ fontSize: '2rem', marginBottom: '1rem', marginTop: '5rem', fontWeight: '500' }}>
+            <p style={{ fontSize: '2rem', marginBottom: '1rem', marginTop: '5rem', fontWeight: '500' }} data-aos="fade">
                 Other projects
             </p>
-            <section style={{ paddingTop: '1rem', paddingBottom: '1rem' }}>
+            <section style={{ paddingTop: '1rem', paddingBottom: '1rem' }} data-aos="fade">
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
                     <OtherProjectCard />
                 </div>
             </section>
-            <p style={{ fontSize: '2rem', marginBottom: '1rem', marginTop: '5rem', fontWeight: '500' }}>
+            <p style={{ fontSize: '2rem', marginBottom: '1rem', marginTop: '5rem', fontWeight: '500' }} data-aos="fade">
                 Skills
             </p>
-            <section style={{ paddingTop: '1rem', paddingBottom: '1rem' }}>
+            <section style={{ paddingTop: '1rem', paddingBottom: '1rem' }} data-aos="fade">
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
                     <GitHubCard />
                 </div>
             </section>
-            <section style={{ paddingTop: '1rem', paddingBottom: '1rem' }}>
+            <section style={{ paddingTop: '1rem', paddingBottom: '1rem' }} data-aos="fade">
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
                     <Skills />
                 </div>
