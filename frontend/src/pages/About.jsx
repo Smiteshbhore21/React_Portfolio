@@ -64,7 +64,7 @@ const About = () => {
                 marginTop: isMobile ? '1rem' : '2rem'
             }}>
             <div className={styles.aboutHeader}>
-                <h2>
+                <h2 data-aos="fade">
                     <span className={styles.funFact}>Fun facts.</span> <br />
                     <TypeAnimation
                         key={fact}                // remount on every new fact
@@ -77,7 +77,7 @@ const About = () => {
                         className={styles.typeAnimation}
                     />
                 </h2>
-                <img className={styles.meEmoji} src={me} alt="Me" />
+                <img className={styles.meEmoji} src={me} alt="Me" data-aos="fade" />
             </div>
             <div className={styles.aboutMe} data-aos="fade-right">
                 <div className={styles.card}>
