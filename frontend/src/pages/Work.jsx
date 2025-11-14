@@ -3,8 +3,8 @@ import ProjectCard from '../components/ProjectCard';
 
 // Import images
 import CanteenMate from '../assets/CanteenMate.png';
-import FaceRecogni from '../assets/Face_Recogni.jpg';
-import TourGuide from '../assets/Tour Guide.jpg';
+import CarPricePredict from '../assets/CarPricePredict.png';
+import URLShorteners from '../assets/URLShorteners.jpg';
 import OtherProjectCard from '../components/OtherProjectCard';
 import GitHubCard from '../components/GitHubCard';
 import Skills from '../components/Skills';
@@ -21,20 +21,20 @@ const ProjectData = [
         imagePath: CanteenMate,
     },
     {
-        title: "Tour Guide (React)",
+        title: "URL Shortner (Node)",
         description:
-            "Developed the front-end of a web application using React, designed to provide users with a seamless experience for exploring and planning tours. Implemented responsive UI components, ensured user-friendly navigation, and focused on optimizing performance for an engaging and interactive interface.",
-        github: "https://github.com/TechLathe?tab=repositories",
-        demo: "https://devtourbook.netlify.app/",
-        imagePath: TourGuide,
+            "A fast, production-ready URL shortening REST API built with Node.js. Generates collision-resistant short codes, protects against abuse, returns meaningful errors, and logs click events so the service is analytics-ready. Dockerized for deployment and instrumented for monitoring.",
+        github: "https://github.com/Smiteshbhore21/Node/tree/master/Short-URL",
+        demo: "https://github.com/Smiteshbhore21/Node/tree/master/Short-URL",
+        imagePath: URLShorteners,
     },
     {
-        title: "Face Recognition and Attendance System (Python)",
+        title: "Car Price Prediction (Machine Learning + Flask)",
         description:
-            "Built a Python-based application for automated attendance using face recognition. Utilized libraries like OpenCV (cv2) for image processing, FaceRecognition for facial detection and recognition, NumPy for data handling, and CSV with DateTime for recording and managing attendance logs efficiently. Enhanced accuracy and streamlined the attendance process through real-time face detection and recognition.",
-        github: "https://github.com/Smiteshbhore21/Face-Recognition-Attendance-System",
-        demo: "https://github.com/Smiteshbhore21/Face-Recognition-Attendance-System",
-        imagePath: FaceRecogni,
+            "A production-ready ML service: a linear regression model that predicts used car prices from rich feature data, exposed via a Flask API with integrated preprocessing and model-loading pipeline.",
+        github: "https://github.com/Smiteshbhore21/car_price_predict_flask_backend",
+        demo: "https://car-price-predict-flask-backend.onrender.com/",
+        imagePath: CarPricePredict,
     },
 ];
 
