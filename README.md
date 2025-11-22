@@ -42,7 +42,7 @@ The site includes search-engine-optimization enhancements such as meta tags, JSO
 ```bash
 # Clone repo
 git clone https://github.com/Smiteshbhore21/React_Portfolio.git
-cd React_Portfolio
+cd React_Portfolio/frontend
 
 # Install dependencies
 npm install
