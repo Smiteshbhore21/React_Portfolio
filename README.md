@@ -20,8 +20,7 @@ The site includes search-engine-optimization enhancements such as meta tags, JSO
 |---------|-------|
 | **Frontend** | React, Vite |
 | **Routing** | React Router |
-| **Styling** | CSS (Tailwind optional) |
-| **SEO** | react-helmet, JSON-LD, sitemap.xml, robots.txt |
+| **Styling** | CSS |
 | **Deployment** | Netlify |
 
 ---
@@ -66,4 +65,3 @@ npm run build
 
 # Preview production build
 npm run preview
----
