@@ -37,6 +37,17 @@ The site includes search-engine-optimization enhancements such as meta tags, JSO
 
 ---
 
+If you want, I can also:
+
+✅ Add shields/badges  
+✅ Add GIF/preview screenshot  
+✅ Add a "Projects" section  
+✅ Make a minimal version or an aesthetic dark-theme README  
+
+Just tell me!
+
+---
+
 ## 🚀 Run Locally
 
 ```bash
@@ -55,16 +66,4 @@ npm run build
 
 # Preview production build
 npm run preview
-
 ---
-
-If you want, I can also:
-
-✅ Add shields/badges  
-✅ Add GIF/preview screenshot  
-✅ Add a "Projects" section  
-✅ Make a minimal version or an aesthetic dark-theme README  
-
-Just tell me!
-
-
