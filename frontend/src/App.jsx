@@ -2,13 +2,14 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Helmet } from "react-helmet";
 
+import mainLogo from './assets/logo_portfolie.png';
 import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
 import Work from './pages/Work.jsx';
 import About from './pages/About.jsx';
 
 const SITE_URL = "https://smiteshbhore.netlify.app";
-const SOCIAL_IMAGE = `${SITE_URL}/assets/logo_portfolie.png`;
+const SOCIAL_IMAGE = `${SITE_URL}${mainLogo}`;
 const NAME = "Smitesh Bhore";
 
 const App = () => {
