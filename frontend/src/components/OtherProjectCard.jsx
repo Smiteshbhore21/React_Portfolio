@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './OtherProjectCard.module.css';
 
-import RealEstate from '../assets/Real_Estate.jpg';
+import URLShorteners from '../assets/URLShorteners.jpg';
 import ToDo from '../assets/ToDo.jpg';
 import MovieStreaming from '../assets/MovieStreaming.png';
 
@@ -23,12 +23,12 @@ const OtherprojectData = [
         image: MovieStreaming,
     },
     {
-        title: "Real Estate (React)",
+        title: "URL Shortner",
         description:
-            "UI Practice Mockup: Discover your dream home with seamless browsing.",
-        github: "https://github.com/Smiteshbhore21/React/tree/main/React_Real_Estate",
-        demo: "https://github.com/Smiteshbhore21/React/tree/main/React_Real_Estate",
-        image: RealEstate,
+            "Production-ready URL shortener REST API built with Node.js, featuring collision-resistant short codes and analytics-ready click logging.",
+        github: "https://github.com/Smiteshbhore21/Node/tree/master/Short-URL",
+        demo: "https://github.com/Smiteshbhore21/Node/tree/master/Short-URL",
+        image: URLShorteners,
     },
 ];
 

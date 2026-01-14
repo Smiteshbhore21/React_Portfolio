@@ -4,7 +4,7 @@ import ProjectCard from '../components/ProjectCard';
 // Import images
 import CanteenMate from '../assets/CanteenMate.png';
 import CarPricePredict from '../assets/CarPricePredict.png';
-import URLShorteners from '../assets/URLShorteners.jpg';
+import SudokuSolver from '../assets/SudokuGame.png';
 import OtherProjectCard from '../components/OtherProjectCard';
 import GitHubCard from '../components/GitHubCard';
 import Skills from '../components/Skills';
@@ -21,13 +21,14 @@ const ProjectData = [
         imagePath: CanteenMate,
     },
     {
-        title: "URL Shortner (Node)",
+        title: "Sudoku Solver & Playable Game (Full Stack)",
         description:
-            "A fast, production-ready URL shortening REST API built with Node.js. Generates collision-resistant short codes, protects against abuse, returns meaningful errors, and logs click events so the service is analytics-ready. Dockerized for deployment and instrumented for monitoring.",
-        github: "https://github.com/Smiteshbhore21/Node/tree/master/Short-URL",
-        demo: "https://github.com/Smiteshbhore21/Node/tree/master/Short-URL",
-        imagePath: URLShorteners,
+            "A full-stack, production-ready Sudoku web application built with React (TypeScript) and Node.js (Express). Features difficulty-based puzzle generation, a backtracking solver engine, real-time client-side validation, hints, locked original cells, and game-completion detection. Clean REST APIs, optimized constraint checks, and cloud deployment on Render and Vercel make the app scalable and interview-ready.",
+        github: "https://github.com/Smiteshbhore21/SudokuApp",
+        demo: "https://sudokuapp-six.vercel.app/",
+        imagePath: SudokuSolver,
     },
+
     {
         title: "Car Price Prediction (Machine Learning + Flask)",
         description:
@@ -66,10 +67,10 @@ const Work = () => {
                 <h1 style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>
                     Hello there, I'm <span style={{ color: '#4A9782' }}>Smitesh Bhore!</span>
                 </h1>
-                <p style={{ fontSize: '1.4rem', color: '#555' }}>
-                    Crafting mobile‑first discussion forums in Flutter with state‑management best practices, turning complex data flows into intuitive, human‑centered interactions.
+                <p style={{ textAlign: 'justify', fontSize: '1.4rem', color: '#555' }}>
+                    Designing and building end-to-end products from intuitive mobile interfaces to robust backend services and applied machine learning driven by clean design and measurable impact.
                 </p>
-                <p style={{ fontSize: '1.4rem', color: '#555' }}>
+                <p style={{ textAlign: 'justify', fontSize: '1.4rem', color: '#555' }}>
                     Android Team Lead at
                     <b>
                         <span style={{ color: "#00819d" }}> GDG</span>

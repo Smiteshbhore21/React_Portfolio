@@ -9,9 +9,11 @@ const Skills = () => {
                     <span>C++</span>
                     <span>Dart</span>
                     <span>Java</span>
-                    <span>Flutter</span>
                     <span>Python</span>
                     <span>Javascript</span>
+                    <span>Node</span>
+                    <span>Express</span>
+                    <span>Flutter</span>
                     <span>React</span>
                     <span>Machine Learning</span>
                     <span>HTML</span>
@@ -24,9 +26,11 @@ const Skills = () => {
                     <span>C++</span>
                     <span>Dart</span>
                     <span>Java</span>
-                    <span>Flutter</span>
                     <span>Python</span>
                     <span>Javascript</span>
+                    <span>Node</span>
+                    <span>Express</span>
+                    <span>Flutter</span>
                     <span>React</span>
                     <span>Machine Learning</span>
                     <span>HTML</span>
