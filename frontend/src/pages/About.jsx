@@ -101,7 +101,7 @@ const About = () => {
             <div className={styles.aboutMeCircle} data-aos="fade-left">
                 <div className={styles.aboutMeDesign}>
                     <p>
-                        Contributed as a <b>design team member</b> in the college's tech community by creating visually appealing graphics, posters, and digital assets for technical events, effectively boosting outreach and participant engagement.
+                        Served as <b>Android Developer Team Lead</b>, overseeing app UI design, feature integration, and collaboration with design teams to deliver high-quality digital solutions for technical events.
                     </p>
                 </div>
                 <div className={styles.cardDesign}>

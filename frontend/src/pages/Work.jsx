@@ -70,7 +70,7 @@ const Work = () => {
                     Crafting mobile‑first discussion forums in Flutter with state‑management best practices, turning complex data flows into intuitive, human‑centered interactions.
                 </p>
                 <p style={{ fontSize: '1.4rem', color: '#555' }}>
-                    Design Team Member at
+                    Android Team Lead at
                     <b>
                         <span style={{ color: "#00819d" }}> GDG</span>
                     </b> on Campus, ex‑Flutter Intern at
